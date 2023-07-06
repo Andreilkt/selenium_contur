@@ -11,8 +11,8 @@ search_fields = driver.find_element(By.NAME, "query")
 search_fields.send_keys("Тестирование")
 search_fields.send_keys(Keys.ENTER)
 
-header = driver.find_element(By.TAG_NAME, "h3")
-assert header.text == "Тестирование"
+header = driver.find_element(By.TAG_NAME, "h2")
+assert header.text == "Фундаментальная теория"
 
 
 sleep(10)
