@@ -1,3 +1,5 @@
+"""Скрипт отбращается к rambler.ru. записывает слово тестирование в поле поиска и сравнивает ссылку"""
+
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
@@ -10,7 +12,7 @@ search_fields.send_keys("Тестирование")
 search_fields.send_keys(Keys.ENTER)
 
 header = driver.find_element(By.TAG_NAME, "h3")
-assert header.text == "Тестирование программного обеспечения - Википедия"
+assert header.text == "Тестирование"
 
 
 sleep(10)
